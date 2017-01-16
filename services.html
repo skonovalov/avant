@@ -5,6 +5,7 @@
 	<title>Авантаж</title>
 	<link rel="icon" type="image/vnd.microsoft.png" href="favicon.png">
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/owl.carousel.css">
 	<link rel="stylesheet" href="./css/owl.theme.css">
@@ -13,67 +14,71 @@
 <body>
 <div class="wrapper">
 	<header>
-		<div class="header-inner">
-			<div class="header-left">
-				<div class="header-logo">
-					<a href="">
-						<img src="./images/logo.png" alt="png">
-					</a>
+		<div class="container header-inner">
+			<div class="row">
+				<div class="col-lg-3 header-left">
+					<div class="header-logo">
+						<a href="">
+							<img src="./images/logo.png" alt="png">
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="header-right">
-				<a href="" class="header-callback callback">Заказать обратный звонок</a>
-				<div class="header-phone">
-					<ul>
-						<li>(812) 676-75-55</li>
-						<li>(812) 954-24-60</li>
-					</ul>
-				</div>
+				<div class="col-lg-8  col-lg-offset-1 header-right">
+					<a href="" class="btn header-callback callback">Заказать обратный звонок</a>
+					<div class="header-phone">
+						<ul>
+							<li>(812) 676-75-55</li>
+							<li>(812) 954-24-60</li>
+						</ul>
+					</div>
 
-				<div class="header-search">
-					<form action="">
-						<div class="input">
-							<label for="search">Поиск по сайту</label>
-							<input type="text" id="search" name="search">
-						</div>
-						<button>
-							<span class="icon-search"></span>
-						</button>
-					</form>
-				</div>
-			</div>
-		</div>
-
-		<div class="header-menu">
-			<div class="header-menu-inner">
-				<nav>
-					<ul>
-						<li><a href="about.html">О компании</a></li>
-						<li><a href="services.html">Услуги</a></li>
-						<li><a href="#">Наши клиенты</a>
-							<div class="sub-menu">
-								<ul>
-									<li><a href="#">Наши клиенты 1</a></li>
-									<li><a href="#">Наши клиенты 2</a></li>
-									<li><a href="#">Наши клиенты 3</a></li>
-								</ul>
+					<div class="header-search">
+						<form action="">
+							<div class="input">
+								<label for="search">Поиск по сайту</label>
+								<input type="text" id="search" name="search">
 							</div>
-						</li>
-						<li><a href="#">Цены</a></li>
-						<li><a href="#">полезная информация</a></li>
-						<li><a href="#">образцы документов</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-				</nav>
+							<button>
+								<span class="icon-search"></span>
+							</button>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
-	</header>
+
+		<nav class="navbar navbar-default">
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="container header-menu-inner" id="bs-example-navbar-collapse-1">
+	    <div class="row">
+				<ul class="nav navbar-nav">
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="services.html">Услуги</a></li>
+					<li><a href="#">Наши клиенты</a>
+						<div class="sub-menu">
+							<ul>
+								<li><a href="#">Наши клиенты 1</a></li>
+								<li><a href="#">Наши клиенты 2</a></li>
+								<li><a href="#">Наши клиенты 3</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Цены</a></li>
+					<li><a href="#">полезная информация</a></li>
+					<li><a href="#">образцы документов</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+	    </div>
+	    </div><!-- /.navbar-collapse -->
+		</nav>
+	</nav>
 
 	<div class="content">
 
 		<div class="index-slider services-top">
-			<div class="index-slider-wrap">
-				<div class="slider-menu">
+			<div class="index-slider-wrap container">
+			<div class="row">
+				<div class="col-lg-4 slider-menu">
 					<ul>
 						<li class="item1 active"><a href="">Управление эксплуатацией бизнес-центров, офисных зданий</a></li>
 						<li class="item2"><a href="">Управление офисными помещениями, апартаментами в административных зданиях</a></li>
@@ -88,7 +93,7 @@
 					</ul>
 				</div>
 
-				<div class="services">
+				<div class="col-lg-8 services services_nobg">
 					<div class="navigation">
 						<ul>
 							<li><a href="">Главная</a></li>
@@ -122,6 +127,7 @@
 					</div>
 				</div>
 			</div>
+			</div>
 		</div>
 
 		<div class="services-request">
@@ -129,15 +135,17 @@
 				<article>отправить запрос на обратный звонок</article>
 
 				<form action="">
-					<div class="input input_mr">
-						<label for="">Ваше имя</label>
-						<input type="text">
+					<div class="row">
+						<div class="col-lg-4 input input_mr">
+							<label for="">Ваше имя</label>
+							<input type="text">
+						</div>
+						<div class="col-lg-4 input">
+							<label for="">Телефон</label>
+							<input type="text">
+						</div>
+						<button class="col-lg-4 btn btn-green">отправить</button>
 					</div>
-					<div class="input">
-						<label for="">Телефон</label>
-						<input type="text">
-					</div>
-					<button class="btn">отправить</button>
 				</form>
 			</div>
 		</div>
@@ -164,7 +172,7 @@
 					<input type="text">
 				</div>
 
-				<button class="callback">Заказать</button>
+				<button class="btn callback">Заказать</button>
 			</form>
 		</div>
 
@@ -177,55 +185,61 @@
 </div>
 
 <footer>
-	<div class="footer-inner">
-		<div class="footer-menu">
-			<nav>
-				<ul>
-					<li><a href="#">О компании</a></li>
-					<li><a href="#">Услуги</a></li>
+	<div class="container footer-inner">
+		<nav class="navbar navbar-default">
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="container footer-menu" id="bs-example-navbar-collapse-1">
+	    <div class="row">
+				<ul class="nav navbar-nav col-lg-10 center-block">
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="services.html">Услуги</a></li>
 					<li><a href="#">Наши клиенты</a></li>
 					<li><a href="#">Цены</a></li>
 					<li><a href="#">Полезная информация</a></li>
 					<li><a href="#">Образцы документов</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
-			</nav>
-		</div>
+	    </div>
+	    </div><!-- /.navbar-collapse -->
+		</nav>
 
 		<div class="footer-text">
-			<div class="footer-text-item">
-				<ul>
-					<li><a href="">Управление эксплуатацией объектов недвижимости</a></li>
-					<li><a href="">Управление эксплуатацией бизнес-центров</a></li>
-					<li><a href="">Управление эксплуатацией паркингов</a></li>
-					<li><a href="">Обслуживание зданий и инженерных систем</a></li>
-					<li><a href="">Управление обслуживанием офисов и апартаментов</a></li>
-				</ul>
-			</div>
-			<div class="footer-text-item">
-				<ul>
-					<li><a href="">Доверительное управление коммерческой недвижимостью</a></li>
-					<li><a href="">Доверительное управление квартирами</a></li>
-					<li><a href="">Уход за квартирами</a></li>
-					<li><a href="">Консьерж-сервис для собственников квартир</a></li>
-					<li><a href="">Дизайн квартир и помещений</a></li>
-				</ul>
-			</div>
-			<div class="footer-text-item">
-				<ul>
-					<li><a href="">Планировка и создание интерьера помещений</a></li>
-					<li><a href="">Ремонт квартир и помещений</a></li>
-					<li><a href="">Инсталляция инженерных систем</a></li>
-					<li><a href="">Авторский и технический надзор за ремонтом помещений</a></li>
-					<li><a href="">Уборка помещений и прилегающих территорий</a></li>
-				</ul>
+			<div class="row">
+				<div class="col-lg-4 footer-text-item">
+					<ul>
+						<li><a href="">Управление эксплуатацией объектов недвижимости</a></li>
+						<li><a href="">Управление эксплуатацией бизнес-центров</a></li>
+						<li><a href="">Управление эксплуатацией паркингов</a></li>
+						<li><a href="">Обслуживание зданий и инженерных систем</a></li>
+						<li><a href="">Управление обслуживанием офисов и апартаментов</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 footer-text-item">
+					<ul>
+						<li><a href="">Доверительное управление коммерческой недвижимостью</a></li>
+						<li><a href="">Доверительное управление квартирами</a></li>
+						<li><a href="">Уход за квартирами</a></li>
+						<li><a href="">Консьерж-сервис для собственников квартир</a></li>
+						<li><a href="">Дизайн квартир и помещений</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 footer-text-item">
+					<ul>
+						<li><a href="">Планировка и создание интерьера помещений</a></li>
+						<li><a href="">Ремонт квартир и помещений</a></li>
+						<li><a href="">Инсталляция инженерных систем</a></li>
+						<li><a href="">Авторский и технический надзор за ремонтом помещений</a></li>
+						<li><a href="">Уборка помещений и прилегающих территорий</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
-		<div class="footer-copy">
+		<div class="footer-copy text-center">
 			&copy; Авантаж СПБ Управляющая компания, 2011-2015. All Rights Reserved. <a href="#">Artrix.ru</a>
 		</div>
 	</div>
 </footer>
+
 
 <script src=" https://yastatic.net/jquery/1.9.0/jquery.min.js"></script>
 <script src="./js/owl.carousel.min.js"></script>
