@@ -975,12 +975,12 @@ footer .navbar-default{
 .footer-menu .navbar-nav {
 	float: none;
 }
-.navbar-default .navbar-nav>li {
+footer .navbar-default .navbar-nav>li {
   display: inline-block;
   vertical-align: middle;
   margin-right: 23px;
 }
-.navbar-default .navbar-nav>li>a {
+footer .navbar-default .navbar-nav>li>a {
 	display: inline;
 	width: auto;
 	height: auto;
@@ -992,13 +992,13 @@ footer .navbar-default{
   letter-spacing: 0.7px;
 	text-transform: none;
 }
-.navbar-default .navbar-nav>li:last-child {
+footer .navbar-default .navbar-nav>li:last-child {
   margin-right: 0;
 }
-.navbar-default .navbar-nav>li:hover{
+footer .navbar-default .navbar-nav>li:hover{
 	background: none;
 }
-.navbar-default .navbar-nav>li:hover a {
+footer .navbar-default .navbar-nav>li:hover a {
 	background: none;
   color: #0781a9;
   text-decoration: underline;
